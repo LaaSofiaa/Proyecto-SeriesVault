@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import proyecto.personal.seriesVault.Domain.User;
 import proyecto.personal.seriesVault.Services.UserService;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/auth")
 public class LoginController {
@@ -25,6 +27,21 @@ public class LoginController {
         }
     }
 
-
+    @CrossOrigin(origins ="*")
+    @PostMapping("/login")
+    public ResponseEntity<String>login(@RequestBody Map<String, String> loginData){
+        try{
+            String email = loginData.get("email");
+            String password = loginData.get("password");
+            String id = userService.authentication(email,password);
+            if(id!=null){
+                return new ResponseEntity<>(id,HttpStatus.OK);
+            }else {
+                return new ResponseEntity<>("Invalid credentials!", HttpStatus.UNAUTHORIZED);
+            }
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
 }

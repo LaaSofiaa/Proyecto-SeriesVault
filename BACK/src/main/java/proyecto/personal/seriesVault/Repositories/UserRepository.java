@@ -8,4 +8,5 @@ public interface UserRepository {
     User findByUserName(String userName);
     User findByEmail(String email);
     void createUser(User user);
+    void modifyUser(User user);
 }
