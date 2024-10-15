@@ -64,7 +64,7 @@ public class UserService {
                 if(!user.getName().equals(oldUser.getName())){
                     oldUser.setName(user.getName());
                 }
-                if(!user.getUserName().equals(oldUser.getName())){
+                if(!user.getUserName().equals(oldUser.getUserName())){
                     oldUser.setUserName(user.getUserName());
                 }
                 if(!user.getEmail().equals(oldUser.getEmail())){

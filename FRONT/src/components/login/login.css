@@ -1,0 +1,67 @@
+
+/* Estilo para el contenedor principal */
+.min-h-screen {
+    min-height: 100vh; 
+  }
+  
+  /* Fondo del contenedor principal */
+  .bg-pink-100 {
+    background-color: #fbcfe8; 
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .bg-pink-600 {
+    background-color: #ec4899; 
+  }
+  
+  .bg-pink-700 {
+    background-color: #db2777; 
+  }
+  
+  /* Efectos hover para el botón */
+  .hover\:bg-pink-700:hover {
+    background-color: #db2777; 
+  }
+  
+  /* Estilo para los campos de entrada */
+  input {
+    transition: border-color 0.2s, box-shadow 0.2s; 
+  }
+  
+  /* Efecto de enfoque en los campos de entrada */
+  input:focus {
+    border-color: #ec4899; /* Cambia el color del borde al enfocar el campo */
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5); /* Sombra alrededor del campo */
+  }
+  
+  /* Estilo para el texto y etiquetas */
+  .text-pink-700 {
+    color: #ec4899; 
+  }
+  
+  .text-pink-600 {
+    color: #f43f5e; 
+  }
+  
+  .text-pink-900 {
+    color: #9b1231; 
+  }
+  
+  /* Estilo para el checkbox */
+  .h-4 {
+    height: 1rem; 
+  }
+  
+  .w-4 {
+    width: 1rem; 
+  }
+  
+  .rounded {
+    border-radius: 0.25rem; 
+  }
+  
+  /* Estilo para los enlaces */
+  .font-medium {
+    font-weight: 500;
+  }
+  

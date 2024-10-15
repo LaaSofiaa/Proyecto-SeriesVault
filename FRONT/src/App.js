@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './components/header/header.tsx';
 import SeriesForm from './components/index/seriesForm.tsx';
+import Login from './components/login/login.tsx';
+import Register from './components/register/register.tsx';
+
 
 export default function App() {
   return (
